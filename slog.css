@@ -1,0 +1,42 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+
+}
+.bg-dark {
+    background-color: #0e397c!important;
+}
+
+nav {
+  border-bottom: solid black 0.5px;
+}
+.jumbotron {
+  background-image: url(saxguitar.jpg);
+  background-size: cover;
+  padding: 6rem 4rem;
+  border-radius: 0;
+}
+
+.jumbotron-ozadje {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+  background-color: #0e397c;
+}
+.footer {
+  background-color: #0e397c;
+}
+h1 {
+  font-size: 70px;
+  line-height: 2;
+}
+h2 {
+  text-align: center;
+  line-height: 2;
+}
+.table-dark {
+  background-color: #0e397c;
+}
+.card-text {
+  text-align: justify;
+}

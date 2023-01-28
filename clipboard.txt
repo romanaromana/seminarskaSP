@@ -1,0 +1,30 @@
+<?php // get password parameters from URL
+$password = $_GET['password'];
+if(!empty($password)) {
+    // check if password is correct
+    if($password == "password") {
+        // password is correct
+    } else {
+        // password is incorrect 
+        header("Location: error.php?password=incorrect");
+    }
+} else {
+    // password is empty then redirect user to error page
+    header("Location: error.php");
+}
+?>
+
+
+
+
+// 
+error_reporting(E_ALL);
+ini_set("display_errors", true);
+require_once 'data.php';
+$query="select * from messages limit 10"; 
+$result=mysqli_query($conn,$query);
+
+if (isset($_POST['submit'])) {
+    $urlString = "addproduct.php?password=" . $_POST['password'];
+    header('Location: ' . $urlString);
+}
